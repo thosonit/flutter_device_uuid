@@ -1,0 +1,29 @@
+PODS:
+  - device_uuid (0.0.1):
+    - Flutter
+    - XYUUID
+  - Flutter (1.0.0)
+  - XYUUID (1.0.0)
+
+DEPENDENCIES:
+  - device_uuid (from `.symlinks/plugins/device_uuid/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - XYUUID
+
+EXTERNAL SOURCES:
+  device_uuid:
+    :path: ".symlinks/plugins/device_uuid/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  device_uuid: 1673ecd99e9ae7a1508120f378158c85ecd708a6
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  XYUUID: 9a2483143d14fc5204b619042ca65073df9fbd88
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.3

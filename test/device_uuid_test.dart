@@ -9,7 +9,7 @@ class MockDeviceUuidPlatform
     implements DeviceUuidPlatform {
 
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
+  Future<String?> getUUID() => Future.value('42');
 }
 
 void main() {
@@ -19,11 +19,11 @@ void main() {
     expect(initialPlatform, isInstanceOf<MethodChannelDeviceUuid>());
   });
 
-  test('getPlatformVersion', () async {
+  test('getUUID', () async {
     DeviceUuid deviceUuidPlugin = DeviceUuid();
     MockDeviceUuidPlatform fakePlatform = MockDeviceUuidPlatform();
     DeviceUuidPlatform.instance = fakePlatform;
   
-    expect(await deviceUuidPlugin.getPlatformVersion(), '42');
+    expect(await deviceUuidPlugin.getUUID(), '42');
   });
 }

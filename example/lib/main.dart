@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  String _uuid = 'Unknown';
   final _deviceUuidPlugin = DeviceUuid();
 
   @override
@@ -27,14 +27,13 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
+    String uuid;
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion =
-          await _deviceUuidPlugin.getPlatformVersion() ?? 'Unknown platform version';
+      uuid = await _deviceUuidPlugin.getUUID() ?? 'Unknown uuid version';
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      uuid = 'Failed to get uuid version.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -43,7 +42,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      _uuid = uuid;
     });
   }
 
@@ -52,10 +51,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Device UUID'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Text('UUID: $_uuid'),
         ),
       ),
     );

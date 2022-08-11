@@ -1,10 +1,10 @@
 name: device_uuid
-description: A new Flutter project.
+description: A plugin to get device's UUID.
 version: 0.0.1
 homepage:
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=2.5.0"
 
 dependencies:

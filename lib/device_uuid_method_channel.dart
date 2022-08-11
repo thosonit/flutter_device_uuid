@@ -10,8 +10,8 @@ class MethodChannelDeviceUuid extends DeviceUuidPlatform {
   final methodChannel = const MethodChannel('device_uuid');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
+  Future<String?> getUUID() async {
+    final uuid = await methodChannel.invokeMethod<String?>('getUUID');
+    return uuid;
   }
 }

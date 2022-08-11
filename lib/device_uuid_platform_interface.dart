@@ -23,7 +23,7 @@ abstract class DeviceUuidPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<String?> getUUID() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }
