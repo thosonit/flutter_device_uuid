@@ -6,9 +6,7 @@ A plugin to get device's UUID
 
 Add this dependency to `pubspec.yaml` file
 ```yaml
-  device_uuid:
-    git:
-      url: https://github.com/thoson-it/flutter_device_uuid.git
+  device_uuid: ^0.0.1
 ```
 
 ## Using
