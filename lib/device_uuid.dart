@@ -1,4 +1,3 @@
-
 import 'device_uuid_platform_interface.dart';
 
 class DeviceUuid {

@@ -6,7 +6,7 @@ A plugin to get device's UUID
 
 Add this dependency to `pubspec.yaml` file
 ```yaml
-  device_uuid: ^0.0.1
+  device_uuid: ^0.0.4
 ```
 
 ## Using

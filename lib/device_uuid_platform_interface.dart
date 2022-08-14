@@ -14,7 +14,7 @@ abstract class DeviceUuidPlatform extends PlatformInterface {
   ///
   /// Defaults to [MethodChannelDeviceUuid].
   static DeviceUuidPlatform get instance => _instance;
-  
+
   /// Platform-specific implementations should set this with their own
   /// platform-specific class that extends [DeviceUuidPlatform] when
   /// they register themselves.

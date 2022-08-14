@@ -1,6 +1,6 @@
 name: device_uuid
-description: A plugin to get device's UUID.
-version: 0.0.3
+description: A plugin to get the device's UUID. In Android, the UUID is ANDROID_ID encrypted using SHA-1. In iOS, the UUID is a hash string saved in Keychain.
+version: 0.0.4
 homepage: https://github.com/thoson-it
 
 environment:
