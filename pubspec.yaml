@@ -1,6 +1,6 @@
 name: device_uuid
 description: A plugin to get device's UUID.
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
