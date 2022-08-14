@@ -1,3 +1,11 @@
-## 0.0.1
+## 0.0.3
+---
+* Update license 
 
-* TODO: Describe initial release.
+## 0.0.2
+---
+* Update readme
+
+## 0.0.1
+---
+* Initial release.
