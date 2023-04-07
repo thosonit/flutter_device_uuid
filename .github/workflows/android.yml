@@ -1,4 +1,4 @@
-name: Android CI
+name: Android Firebase Distribution
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: fastlane test
+      run: ./build_android_firbase
